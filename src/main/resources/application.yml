@@ -4,3 +4,7 @@ micronaut:
 
 template:
   prefix: "Hello "
+
+jackson:
+  serialization:
+    write-dates-as-timestamps: false

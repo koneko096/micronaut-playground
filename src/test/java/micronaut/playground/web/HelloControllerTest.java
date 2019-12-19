@@ -12,6 +12,8 @@ import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
 
+import java.time.LocalDateTime;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -35,7 +37,7 @@ class HelloControllerTest {
   @Test
   void hello() {
     when(greeter.greetHello("gukguk"))
-        .thenReturn(Single.just(new Hello("Test", "gukguk")));
+        .thenReturn(Single.just(new Hello("Test", "gukguk", 1L, LocalDateTime.now())));
 
     Hello response = client.hello("gukguk").blockingGet();
     assertEquals("Test", response.getGreeting());
