@@ -2,7 +2,7 @@ package micronaut.playground.repository;
 
 import io.micronaut.configuration.hibernate.jpa.scope.CurrentSession;
 import io.micronaut.spring.tx.annotation.Transactional;
-import micronaut.playground.domain.Visit;
+import micronaut.playground.domain.entity.Visit;
 
 import javax.inject.Singleton;
 import javax.persistence.EntityManager;

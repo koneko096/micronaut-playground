@@ -15,7 +15,7 @@ datasources:
 jpa:
   default:
     packages-to-scan:
-      - 'micronaut.playground.domain'
+      - 'micronaut.playground.domain.entity'
     properties:
       hibernate:
         hbm2ddl:

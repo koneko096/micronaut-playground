@@ -3,8 +3,8 @@ package micronaut.playground.web;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.reactivex.Single;
-import micronaut.playground.client.Hello;
-import micronaut.playground.domain.Greeter;
+import micronaut.playground.client.model.Hello;
+import micronaut.playground.domain.service.Greeter;
 
 import javax.inject.Inject;
 

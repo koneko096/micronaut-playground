@@ -3,6 +3,7 @@ package micronaut.playground.client;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.client.annotation.Client;
 import io.reactivex.Single;
+import micronaut.playground.client.model.Hello;
 
 import javax.validation.constraints.NotEmpty;
 

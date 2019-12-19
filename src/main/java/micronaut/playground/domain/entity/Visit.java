@@ -1,4 +1,4 @@
-package micronaut.playground.domain;
+package micronaut.playground.domain.entity;
 
 import io.micronaut.core.annotation.Introspected;
 

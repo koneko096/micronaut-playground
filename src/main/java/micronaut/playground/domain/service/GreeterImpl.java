@@ -1,8 +1,8 @@
-package micronaut.playground.domain;
+package micronaut.playground.domain.service;
 
 import io.reactivex.Maybe;
 import io.reactivex.Single;
-import micronaut.playground.client.Hello;
+import micronaut.playground.client.model.Hello;
 import micronaut.playground.config.TemplateConfiguration;
 import micronaut.playground.repository.VisitRepository;
 

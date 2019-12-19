@@ -3,10 +3,10 @@ package micronaut.playground.web;
 import io.micronaut.test.annotation.MicronautTest;
 import io.micronaut.test.annotation.MockBean;
 import io.reactivex.Single;
-import micronaut.playground.client.Hello;
 import micronaut.playground.client.HelloClient;
-import micronaut.playground.domain.Greeter;
-import micronaut.playground.domain.GreeterImpl;
+import micronaut.playground.client.model.Hello;
+import micronaut.playground.domain.service.Greeter;
+import micronaut.playground.domain.service.GreeterImpl;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 

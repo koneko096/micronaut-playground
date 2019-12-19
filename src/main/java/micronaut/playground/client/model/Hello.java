@@ -1,4 +1,4 @@
-package micronaut.playground.client;
+package micronaut.playground.client.model;
 
 import io.micronaut.core.annotation.Introspected;
 
