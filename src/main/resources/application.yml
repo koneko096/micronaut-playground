@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: micronaut-playground
+
+template:
+  prefix: "Hello "
