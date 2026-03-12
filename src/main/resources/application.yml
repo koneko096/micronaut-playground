@@ -1,6 +1,20 @@
 micronaut:
   application:
     name: micronaut-playground
+  executors:
+    io:
+      type: fixed
+      nThreads: 32
+
+r2dbc:
+  datasources:
+    default:
+      url: "r2dbc:h2:mem:///db?options=DB_CLOSE_DELAY=-1;"
+      username: sa
+      password: ""
+      driverClassName: org.h2.Driver
+      schema-generate: CREATE_DROP
+      dialect: H2
 
 template:
   prefix: "Hello "

@@ -3,21 +3,18 @@ micronaut:
     name: micronaut-playground
 
 template:
-  prefix: Test
+  prefix: "Test"
 
-datasources:
-  default:
-    url: ${JDBC_URL:`jdbc:h2:mem:default;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE`}
-    username: ${JDBC_USER:sa}
-    password: ${JDBC_PASSWORD:""}
-    driverClassName: ${JDBC_DRIVER:org.h2.Driver}
+r2dbc:
+  datasources:
+    default:
+      url: "r2dbc:h2:mem:///db?options=DB_CLOSE_DELAY=-1;"
+      username: sa
+      password: ""
+      driverClassName: org.h2.Driver
+      schema-generate: CREATE_DROP
+      dialect: H2
 
-jpa:
-  default:
-    packages-to-scan:
-      - 'micronaut.playground.domain.entity'
-    properties:
-      hibernate:
-        hbm2ddl:
-          auto: update
-        show_sql: true
+jackson:
+  serialization:
+    write-dates-as-timestamps: false
